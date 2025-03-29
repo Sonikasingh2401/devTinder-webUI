@@ -28,7 +28,7 @@ const NavBar = ()=>{
     return (
 
     <div>
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-pink-200 shadow-sm">
             <div className="flex-1">
                 <Link to={"/"} className="btn btn-ghost text-2xl font-serif text-pink-700"> DevTinder</Link>
         </div>
