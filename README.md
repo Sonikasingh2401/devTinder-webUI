@@ -18,5 +18,13 @@
 - Add cors to app.js of backnd with the configurations: origin: (frontend url), credentials : true.
 - Cookies are not set yet - to do this add the (withCredentials:true) in axios function else it will not send the  token back to the browser for futher requests.
 - Install react-redux/redux@toolkit , create a redux store provide it the whole app and create slice and exports all of this in store.
-
+- Add react devtool in chrome
+- Login and see if your data is coming properly in the store - useDispatch and useSelector Hook
+- NavBAr should update as soon as user logins
+- Refactor the code to add constants file + create a component folder
+- You should not be access the other routes without login
+- If the token is not present, redirect users to login page.
+- Create the logout feature working.
+- Bulid the profile page for updation of the profile of the user.
+ 
 
