@@ -26,5 +26,10 @@
 - If the token is not present, redirect users to login page.
 - Create the logout feature working.
 - Bulid the profile page for updation of the profile of the user.
+- Get the feed and add the feed int he store
+- Build the user card on feed
+- Edit profile features
+- show toast message on save of profiles
+- See all my connections
  
 

@@ -5,7 +5,7 @@ const UserCards = ({ user }) => {
 
   return (
     <div>
-      <div className="card bg-purple-300 w-96 shadow-sm">
+      <div className="card bg-purple-100 w-96 shadow-sm">
   <figure>
     <img 
       src="https://www.venmond.com/demo/vendroid/img/avatar/big.jpg"

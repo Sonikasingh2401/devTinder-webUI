@@ -21,7 +21,7 @@ const Login = () => {
     },
     {withCredentials:true});
     dispatch(addUser(res.data));
-    navigate("/feed");
+    return navigate("/");
 
   }
   catch(err){

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { BASE_URL } from "../utils/constant";
 import { removeUser } from "../utils/userSlice";
+import Connections from "./Connections";
 
 const NavBar = ()=>{
 
@@ -18,19 +19,16 @@ const NavBar = ()=>{
             await axios.post(BASE_URL+ "/logout" , {withCredentials:true,});
             dispatch(removeUser())
             return navigate("/login");
-
         }
         catch(err){
             res.status(400).send("Error in loging out..")
         }
     }
-
     return (
-
     <div>
-        <div className="navbar bg-pink-200 shadow-sm">
+        <div className="navbar bg-pink-200 shadow-sm font-serif">
             <div className="flex-1">
-                <Link to={"/"} className="btn btn-ghost text-2xl font-serif text-pink-700"> DevTinder</Link>
+                <Link to={"/"} className="btn btn-ghost text-2xl  text-pink-700"> DevTinder</Link>
         </div>
         {user && <div className="flex gap-2">
             <div className="form-control my-2 text-pink-800">Welcome, {user.firstName}</div>
@@ -50,7 +48,7 @@ const NavBar = ()=>{
                 Profile
             </Link>
             </li>
-            <li><a>Settings</a></li>
+            <li><Link to={"/connections"}>Connections</Link></li>
             <li><a onClick={handleLogout}>Logout</a></li>
         </ul>
         </div>
