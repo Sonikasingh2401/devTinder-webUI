@@ -1,6 +1,6 @@
 # React + Vite
 
-# DevTinder
+# DevTinder web UI
 
 - Create a Vite + react application
 - Remove unnecessary code and create a Hello World
