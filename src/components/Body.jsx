@@ -35,7 +35,7 @@ const Body = () => {
   },[]);
 
   return (
-    <div>
+    <div className=" bg-[url('https://wallpapers.com/images/hd/purple-gradient-background-1920-x-1080-86tsa4sck3yzul4g.jpg')] bg-cover bg-center bg-opacity-50 h-screen">
       <NavBar/>
       <Outlet/>
       <Footer />

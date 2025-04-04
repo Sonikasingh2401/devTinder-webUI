@@ -11,7 +11,6 @@ const Connections = () => {
     const fetchConnection = async () => {  
         try {  
             const res = await axios.get(BASE_URL + '/user/connections', { withCredentials: true });  
-            console.log(res);
             dispatch(addConnections(res?.data?.data));  
         } catch (err) {  
             console.log(err.message);  
@@ -23,7 +22,7 @@ const Connections = () => {
     }, []);  
 
     if (!connections) return null;  
-    if (connections.length === 0) return <h1>No Connections Found..</h1>;  
+    if (connections.length === 0) return <h1 className='flex justify-center my-10 font-serif text-pink-600 text-xl'>No Connections Found..</h1>;  
 
     return (  
         <div className="text-center my-10 font-serif">  

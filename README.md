@@ -30,6 +30,9 @@
 - Build the user card on feed
 - Edit profile features
 - show toast message on save of profiles
-- See all my connections
+- New Page -  See all my connections
+- New Page - See all my connection requests
+- Feature - Accept/Reject connection request
+
  
 

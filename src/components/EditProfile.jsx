@@ -16,6 +16,7 @@ const EditProfile = ({user}) => {
     const dispatch = useDispatch();
     const [showToast, setShowToast] = useState(false);
 
+    
     const SaveProfile = async ()=>{
       setError("");
       try {
@@ -35,10 +36,10 @@ const EditProfile = ({user}) => {
       }, 3000);
       }
       catch(err){
-        setError(err.response?.data?.message || "Failed to update profile");  
+        setError(err.message || "Failed to update profile");  
       console.error(err); 
       }
-    }
+    };
 
   return (
     <>
